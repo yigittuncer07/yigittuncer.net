@@ -1,0 +1,17 @@
+body {
+    background: black;
+}
+
+#number {
+    margin-top: 5%;
+    color:bisque;
+    text-align: center;
+}
+
+#button1 {
+    margin-top: 2cm;
+    height: 50px;
+    width: 50px;
+    margin-left: 49%;
+    background-color: red;
+}

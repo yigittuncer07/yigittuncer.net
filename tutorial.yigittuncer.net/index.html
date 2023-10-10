@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <link rel="icon" href="content/favicon.png">
+    <link rel="stylesheet" href="content/style.css">
+</head>
+<body>
+    <main>
+    <a href="tutorial.yigittuncer.net">
+        <header>
+           <h1 id="mainheader">tutorial</h1>
+        </header>
+    </a>
+    <p>This is a quick tutorial for anyone who might want to build their own personal website, which is suprisingly easy and cheap. Ill also explain some basic concepts about how the web actually works. Here is the basic outline of what we will be doing:
+        <ul>
+            <a href="#domain"> <li> buy a domain name</li> </a>
+            <a href="#server"><li> rent a web server</li></a>
+            <a href="#link"><li> link the domain to your server</li></a>
+            <a href="coding"><li> create your website by creating some simple HTML and CSS files</li></a>
+            <a href=""><li> make the webserver serve these files</li></a>
+    </ul>
+
+
+       <h2 id="domain" >buy a domain name</h2> 
+       <p>A domain is the thing you type in the search bar in your web browser to go to websites. For example when you write www.google.com, you go to google, or if you write yigittuncer.net you get my website. I'll explain this concept better in the IP adress section. For now you need to choose and buy a name for yourself. I recomend using <a href="https://www.godaddy.com/">godaddy.com</a> as thats what I used, but any domain name site will do. You can get better prices if you prefer .xyz or .net names instead of .com</p>
+    
+        <h2 id="server">rent a web server</h2>
+        <p>Now we need to rent a webserver. A server is just a computer that sends files to other computers. For example when you go to google.com, your actually connecting to a server that sends the page that loads in your browser to your computer. For a more in depth explanation you can check out this <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server">link</a>. But you dont really need to understand this to build the site. Now for this step you could rent a VDS (Virtual Dedicated Server) but those are expensive. I recomend renting a web server since they're dirt cheap. I use <a href="https://www.rabisu.com/en/">rabisu.com</a> but you can use any site you want. Just but the web server pack (like <a href="https://www.rabisu.com/en/hosting.php">this</a>). </p>
+    
+        <h2 id="link"> linking the domain to the server</h2>
+        <p>The web server you purchased has it's own IP adress, which is a bunch of numbers like 192.01.01.6. This is allows for other computers to comunicate with each other. For example, as of the time Im writing this, google's IP adress is <a href="https://142.250.187.142">142.250.187.142</a> . If you write this in your search bar or click the link, you'll go to google.com. If we didn't have domain names, we would have to memorize these IP adresses each time we wanted to go to a site. But thanks to domains names we can just remember google.com. So now we want to link the domain name you bought with your IP, so other computers know where to go when someone asks for your website. First you need to get the IP of your website, which should be written on the site you bought it. Then, go to your domain name provider and go to the DNS settings. From there you want to click on create a new record, then select type A for type, and enter the IP adress into the data section.</p>
+        <img id="dns_settings"src="content/dnssettings_2.jpg" alt="dns settings">
+        <p id="caption">my personal settings</p>
+
+        <h2 id="#coding">coding the website</h2>
+        <p>At this step if everything went ok we actaully have a website on the web! The only problem is theres nothing on there. We need to now need to create HTML and CSS files for the site. Explaining this would be out of scope of this short guide, so I'll link to some usefull documents to help you get started. But you can improve this later, for now just create a simple file called index.html on your computer. The index.html file is the first file that opens when you go to a website, for example when you go to google.com youll land on its index.html page.</p>
+    </p>
+    </main>
+
+
+
+</body>
+</html>
