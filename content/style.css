@@ -1,41 +1,50 @@
 body {
-	background: #1b1b1b ;
-	color: #fff ;
-	margin-bottom: 200px ;
+	background: #1b1b1b;
+	color: #fff;
+	margin-bottom: 200px;
 	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 img {
 	max-height: .8em;
 	max-width: 1em;
-	vertical-align: middle ;
+	vertical-align: middle;
 }
 
-h1, h2{
-    text-align: center;
-    color: chocolate;
+h1,
+h2 {
+	text-align: center;
+	color: chocolate;
 }
 
 header {
-	text-align: center ;
-	font-family: "Fira Sans",sans ;
-	padding-bottom: 15pt ;
+	text-align: center;
+	font-family: "Fira Sans", sans;
+	padding-bottom: 15pt;
 }
 
 header h1 {
-	font-size: 30pt ;
-	margin-bottom: 0 ;
+	font-size: 30pt;
+	margin-bottom: 0;
 }
+
 a {
-	color: #33bbff ;
-	text-decoration: none ;
+	color: #33bbff;
+	text-decoration: none;
 }
 
 main {
-	max-width: 800px ;
-	margin: auto ;
+	max-width: 800px;
+	margin: auto;
 }
 
 dt {
-	font-weight: bold ;
+	font-weight: bold;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	height: 30px;
+	margin-left: 40%;
 }
