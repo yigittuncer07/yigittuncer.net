@@ -12,7 +12,7 @@ fclose($myfile);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>click</title>
-    <link rel="icon" type="image/png" href="content/bomb.png" />
+    <link rel="icon" type="image/png" href="content/click.png" />
     <link rel="stylesheet" href="content/style.css" type="text/css">
     <script>
         var numberTitle = "";
