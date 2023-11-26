@@ -74,7 +74,10 @@
             changeBoxColor(weeksSinceBirth);
 
             const resultText = document.getElementById('resultText');
-            if (weeksSinceBirth > 4000) {
+            if (weeksSinceBirth < 0) {
+                resultText.textContent = "I feel like you can't be born in the future :)";
+
+            } else if (weeksSinceBirth > 4000) {
                 resultText.textContent = "You have lived all of your expected weeks! Keep going grandpa!";
 
             } else {
