@@ -50,6 +50,18 @@
             return [year, month, day].join('-');
         }
 
+        function drawRed() {
+            const boxes = document.querySelectorAll('.box');
+
+            // Reset the color of all boxes
+            boxes.forEach(box => {
+                box.style.backgroundColor = "#eab676";
+            });
+
+            for (var i = 0; i < 4000; i++) {
+                boxes[i].style.backgroundColor = "#e31e1e";
+            }
+        }
 
 
         function change_boxes() {
@@ -70,20 +82,27 @@
             const daysSinceBirth = calculateDaysBetweenDates(dateInput, currentDate);
             // console.log("DateInput: " + dateInput + "\ncurrentDate: " + currentDate + "\ndaysSinceBirth: " + daysSinceBirth);
             const weeksSinceBirth = Math.floor(daysSinceBirth / 7);
-
-            changeBoxColor(weeksSinceBirth);
-
             const resultText = document.getElementById('resultText');
-            if (weeksSinceBirth < 0) {
-                resultText.textContent = "I feel like you can't be born in the future :)";
 
-            } else if (weeksSinceBirth > 4000) {
-                resultText.textContent = "You have lived all of your expected weeks! Keep going grandpa!";
-
+            if (dateInput == "1881-05-19") {
+                resultText.textContent = "“The biggest battle is the war against ignorance.” ― Mustafa Kemal Ataturk";
+                drawRed();
             } else {
-                resultText.textContent = "You have lived " + weeksSinceBirth + " weeks out of your expected 4000, so you have about " + (4000 - weeksSinceBirth) + " weeks left. Doesn't seem like much does it?";
+                changeBoxColor(weeksSinceBirth);
+                if (weeksSinceBirth < 0) {
+                    resultText.textContent = "I feel like you can't be born in the future :)";
 
+                } else if (weeksSinceBirth > 4000) {
+                    resultText.textContent = "Statistically you should be dead, but you're still here! Keep going grandpa/grandma!";
+
+                } else {
+                    resultText.textContent = "You have lived " + weeksSinceBirth + " weeks out of your expected 4000, so you have about " + (4000 - weeksSinceBirth) + " weeks left. Doesn't seem like much does it?";
+
+                }
             }
+
+
+
 
 
         }
