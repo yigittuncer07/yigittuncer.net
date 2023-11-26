@@ -1,17 +1,66 @@
 body {
-    background: black;
+	background: #1b1b1b;
+	color: #fff;
+	margin-bottom: 200px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
-#number {
-    margin-top: 5%;
-    color:bisque;
-    text-align: center;
+img {
+	max-height: .8em;
+	max-width: 1em;
+	vertical-align: middle;
 }
 
-#button1 {
-    margin-top: 2cm;
-    height: 50px;
-    width: 50px;
-    margin-left: 49%;
-    background-color: red;
+h1,
+h2 {
+	text-align: center;
+	color: chocolate;
 }
+
+header {
+	text-align: center;
+	font-family: "Fira Sans", sans;
+	padding-bottom: 15pt;
+}
+
+header h1 {
+	font-size: 30pt;
+	margin-bottom: 0;
+}
+
+a {
+	color: #33bbff;
+	text-decoration: none;
+}
+
+main {
+	max-width: 800px;
+	margin: auto;
+}
+
+dt {
+	font-weight: bold;
+}
+
+#container {
+	margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(80, 8px);
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Set a percentage width to keep the grid centered */
+}
+
+.box {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border: 1px solid #fff;
+}
+
+
+
