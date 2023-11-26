@@ -28,6 +28,9 @@
             for (let i = 0; i < 4000; i++) {
                 boxes[i].style.backgroundColor = "#eab676";
             }
+            if (noOfBoxesToColor > 4000) {
+                noOfBoxesToColor = 4000;
+            }
             for (let i = 0; i < noOfBoxesToColor; i++) {
                 boxes[i].style.backgroundColor = "#403220";
             }
