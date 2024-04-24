@@ -83,6 +83,8 @@
             // console.log("DateInput: " + dateInput + "\ncurrentDate: " + currentDate + "\ndaysSinceBirth: " + daysSinceBirth);
             const weeksSinceBirth = Math.floor(daysSinceBirth / 7);
             const resultText = document.getElementById('resultText');
+            const extraText = document.getElementById('extraText');
+            extraText.exists();
 
             if (dateInput == "1881-05-19") {
                 resultText.textContent = "“The biggest battle is the war against ignorance.” ― Mustafa Kemal Ataturk";
@@ -97,14 +99,9 @@
 
                 } else {
                     resultText.textContent = "You have lived " + weeksSinceBirth + " weeks out of your expected 4000, so you have about " + (4000 - weeksSinceBirth) + " weeks left. Doesn't seem like much does it?";
-
+                    extraText.textContent = "by bye";
                 }
             }
-
-
-
-
-
         }
 
         function calculateDaysBetweenDates(dateString1, dateString2) {
@@ -145,6 +142,8 @@
         <div id="container"></div>
 
         <div id="resultText"></div>
+
+        <div id="extraText"></div>
 
     </main>
 </body>
