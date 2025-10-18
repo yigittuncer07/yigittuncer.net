@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>death.yigittuncer.net</title>
+    <title>death</title>
     <link rel="icon" href="content/favicon.png">
     <link rel="stylesheet" href="content/style.css">
     <script>
@@ -84,7 +84,6 @@
             const weeksSinceBirth = Math.floor(daysSinceBirth / 7);
             const resultText = document.getElementById('resultText');
             const extraText = document.getElementById('extraText');
-            extraText.exists();
 
             if (dateInput == "1881-05-19") {
                 resultText.textContent = "“The biggest battle is the war against ignorance.” ― Mustafa Kemal Ataturk";
@@ -94,12 +93,13 @@
                 if (weeksSinceBirth < 0) {
                     resultText.textContent = "I feel like you can't be born in the future :)";
 
+                } else if (weeksSinceBirth < 800) {
+                    resultText.textContent = "You have lived " + weeksSinceBirth + " weeks out of your expected 4000, so you have about " + (4000 - weeksSinceBirth) + " weeks left. You have a long life ahead of you!";
                 } else if (weeksSinceBirth > 4000) {
                     resultText.textContent = "Statistically you should be dead, but you're still here! Keep going grandpa/grandma!";
 
                 } else {
                     resultText.textContent = "You have lived " + weeksSinceBirth + " weeks out of your expected 4000, so you have about " + (4000 - weeksSinceBirth) + " weeks left. Doesn't seem like much does it?";
-                    extraText.textContent = "by bye";
                 }
             }
         }
@@ -122,7 +122,7 @@
 <body>
     <main>
 
-        <a href="https://yigittuncer.net">
+        <a href="../index.html">
             <header>
                 <h1 id="mainHeader">DEATH</h1>
             </header>

@@ -1,8 +1,8 @@
 body {
-	background: #1b1b1b ;
+	background-color: #2c2c2c;
 	color: #fff ;
 	margin-bottom: 200px ;
-	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
+	font-family: Arial, sans-serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 h1, h2{
